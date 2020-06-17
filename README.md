@@ -1,2 +1,6 @@
-Heals yourself to max health.
-Permission: heal.use
+# Information 
+ - Heals yourself to max health.
+ # Commands
+- /heal
+ # Permissions
+ - Permission: heal.use
