@@ -4,7 +4,7 @@ api: [3.0.0, 4.0.0]
 version: 1.0.0
 main: Electro\SimpleHeal\Main
 author: Electro
-description: Healing Plugin
+description: Heals yourslef to max health
 
 commands:
  heal:
