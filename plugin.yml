@@ -1,6 +1,6 @@
 ---
 name: SimpleHeal
-api: [3.0.0, 4.0.0]
+api: 3.0.0
 version: 1.0.0
 main: Electro\SimpleHeal\Main
 author: Electro
@@ -9,9 +9,9 @@ description: Heals yourslef to max health
 commands:
  heal:
   description: Heal yourslef to max health
-  permission: heal.use
+  permission: simpleheal.use
 permissions:
-  heal.use:
+  simpleheal.use:
     description: Permission to heal yourself
     default: op
 ...
