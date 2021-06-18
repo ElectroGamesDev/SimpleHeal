@@ -4,14 +4,14 @@ api: 3.0.0
 version: 1.0.0
 main: Electro\SimpleHeal\Main
 author: Electro
-description: Heals yourslef to max health
+description: Heals yourslef or others to max health
 
 commands:
  heal:
-  description: Heal yourslef to max health
+  description: Heal yourslef or others to max health
   permission: simpleheal.use
 permissions:
   simpleheal.use:
-    description: Permission to heal yourself
+    description: Permission to heal yourself or others
     default: op
 ...
