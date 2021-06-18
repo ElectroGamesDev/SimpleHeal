@@ -1,8 +1,9 @@
 # Information 
- - Heals yourself to max health.
+- Heals yourself to max health.
  # Commands
 - /heal
  # Permissions
- - Permission: heal.use
+- Permission: simpleheal.use
  # Credits
-Icon made by Freepik from www.flaticon.com
+- Icon from www.flaticon.com
+- Subscribe to Electro Games on YouTube
