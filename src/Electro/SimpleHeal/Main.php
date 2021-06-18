@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener{
                        if ($player){
                            $player->setHealth(20);
                            $player->sendMessage("§aYou Have Been Healed!");
-                           $sender->sendMessage("§aYou Have Healed " . $player . "!");
+                           $sender->sendMessage("§aYou Have Healed " . $args[0] . "!");
                        }
                        else{
                            $sender->sendMessage("§cThis player does not exist");
