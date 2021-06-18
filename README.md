@@ -1,7 +1,8 @@
 # Information 
-- Heals yourself to max health.
+- Heals yourself or others to max health.
  # Commands
 - /heal
+- /heal <username>
  # Permissions
 - Permission: simpleheal.use
  # Credits
