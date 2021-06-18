@@ -2,7 +2,7 @@
 - Heals yourself or others to max health.
  # Commands
 - /heal
-- /heal <username>
+- /heal {username}
  # Permissions
 - Permission: simpleheal.use
  # Credits
