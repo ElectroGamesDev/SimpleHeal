@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Electro\SimpleFeed;
+namespace Electro\SimpleHeal;
 
 use pocketmine\player\Player;
 
@@ -17,21 +17,21 @@ class Main extends PluginBase implements Listener{
 	
           public function onCommand(CommandSender $sender,Command $cmd,string $label,array $args) : bool{
            if ($sender instanceof Player) {
-               if ($cmd->getName() == "feed") {
+               if ($cmd->getName() == "heal") {
                    if (isset($args[0])){
                        $player = $this->getServer()->getPlayerExact($args[0]);
                        if ($player){
-                           $player->getHungerManager()->setFood(20);
-                           $player->sendMessage("§aYou Have Been Fed!");
-                           $sender->sendMessage("§aYou Have Fed " . $args[0] . "!");
+                           $player->setHealth(20);
+                           $player->sendMessage("§aYou Have Been Healed!");
+                           $sender->sendMessage("§aYou Have Healed " . $args[0] . "!");
                        }
                        else{
                            $sender->sendMessage("§cThis player does not exist");
                        }
                    }
                    else {
-                       $sender->getHungerManager()->setFood(20);
-                       $sender->sendMessage("§aYou Have Been Fed!");
+                       $sender->setHealth(20);
+                       $sender->sendMessage("§aYou Have Been Healed!");
                    }
                }
            }
@@ -41,4 +41,5 @@ class Main extends PluginBase implements Listener{
           return true;
 
 		}
+
 }
