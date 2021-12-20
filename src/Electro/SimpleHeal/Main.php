@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener{
                        }
                    }
                    else {
-                       $sender->setHealth($player->getMaxHealth());
+                       $sender->setHealth($sender->getMaxHealth());
                        $sender->sendMessage("§aYou Have Been Healed!");
                    }
                }
