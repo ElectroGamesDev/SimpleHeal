@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener{
                    if (isset($args[0])){
                        $player = $this->getServer()->getPlayerExact($args[0]);
                        if ($player){
-                           $player->setHealth(20);
+                           $player->setHealth($player->getMaxHealth());
                            $player->sendMessage("§aYou Have Been Healed!");
                            $sender->sendMessage("§aYou Have Healed " . $args[0] . "!");
                        }
@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener{
                        }
                    }
                    else {
-                       $sender->setHealth(20);
+                       $sender->setHealth($sender->getMaxHealth());
                        $sender->sendMessage("§aYou Have Been Healed!");
                    }
                }
